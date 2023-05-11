@@ -1,6 +1,6 @@
 while문
 ----------------------------------1
-//HelloWorld 다섯번 출력램프로그램
+//HelloWorld 다섯번 출력프로그램
 #include<stdio.h>
 int main(void)
 {
