@@ -1,0 +1,123 @@
+while문
+----------------------------------1
+//HelloWorld 다섯번 출력램프로그램
+#include<stdio.h>
+int main(void)
+{
+  int i=0;
+  
+  while(i<5)
+  {
+    printf("Hello World! \n");
+    i++;
+  }
+  return 0;
+}
+
+--------------------------------------2
+//while 문을 이용한 구구단 출력 프로그램
+
+#include<stdio.h>
+int main(void)
+{
+  int n;
+  int i=1;
+  
+  printf("출력하고 싶은 단: ");
+  scanf("%d",&n);
+  
+  while(i<=9)
+  {
+    printf("%d x %d = %d\n",n,i,n*i);
+    i++;
+  }
+  return 0;
+ }
+
+-------------------------------------3
+//while문 이용한 제곱값 출력 프로그램
+#include<stdio.h>
+int main(void)
+{
+    int n;
+    
+    printf("==============\n");
+    printf(" n  n의 제곱\n");
+    printf("==============\n");
+    
+    n=1;
+    while(n<=10)
+    {
+        printf("%5d   %5d\n",n,n*n);
+        n++;
+     }
+     return 0;
+}
+
+--------------------------------------4
+//1부터 n까지 합 계산하는 프로그램
+#include<stdio.h>
+int main(void)
+{
+    int i,n,sum;    //변수 선언
+    
+    printf("정수를 입력하시오:");
+    scanf("%d,&n);
+    
+    i=1;    //변수 초기화
+    sum=0;
+    
+    while(i<=n)
+    {
+      sum += i;   //sum=sum+i;와 같다.
+      i++;    //i=i+1과 같다.
+    }
+    
+    printf("1부터 %d까지의 합은 %d입니다.\n",n,sum);
+    return 0;
+    }
+    
+    ----------------------------------------5
+    //1부터 n까지 짝수의 합만 계산하는 프로그램
+    
+    #include<stdio.h>
+    int main(void)
+    {
+    int i,n,sum;    //변수 선언
+    
+    printf("정수를 입력하시오:");
+    scanf("%d",&n);
+    
+    i=0;    //변수 0으로 초기화
+    sum=0;
+    
+    while(i<=n)
+    {
+      sum += i;   
+      i = i + 2;    //i += 2;
+    }
+    
+    printf("1부터 %d까지의 짝수의 합은 %d입니다.\n",n,sum);
+    return 0;
+    }
+    
+    ------------------------------------6
+    //while문을 이용한 합계 
+    #include<stdio.h>
+    int main(void)
+    {
+      int i,n,sum;
+      i=0;
+      sum=0;
+      while(i<5)
+      {
+        printf("값을 입력하시오:");
+        scanf("%d",&n);
+        sum=sum+n;
+        i++;
+      }
+      printf("합계는 %d입니다.\n",sum);
+      
+      return 0;
+      }
+    
